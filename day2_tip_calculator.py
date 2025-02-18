@@ -1,4 +1,4 @@
-'''# Reference the position of the characters in a string
+# Reference the position of the characters in a string
 print('Hello'[-2])
 print('Hello'[3])
 
@@ -75,9 +75,9 @@ print(score)
 
 # f-strings
 print("Your score is " + str(score)) # This is painful to do sometimes
-print(f"Your score is {score}")'''
+print(f"Your score is {score}")
 
-# Tip Calculator
+# <!-------Tip Calculator-------->
 print("Welcome to the tip calculator!")
 total_bill = float(input("What's the total bill? $"))
 tip_percentage = int(input("How much tip would you like to give? 10, 12, or 15?"))

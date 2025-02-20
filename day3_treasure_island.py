@@ -1,5 +1,5 @@
-'''# IF STATEMENTS
-print("Welcome to the rollercoaster")
+# IF STATEMENTS
+print("Welcome to the rollercoaster") # Roller Coaster Challenge
 height = int(input("What is your height?"))
 
 if height > 180:
@@ -15,6 +15,10 @@ if height > 180:
     elif age > 18:
         bill = 12
         print("adult ticket is $12.")
+    midlife_crisis = input("Do you have a midlife_crisis? yes or no")
+    if midlife_crisis == "yes" and age > 44 and age < 56:
+        print("Everything is going to be okay. Ride for free with us!")
+
     want_photo = input("Do you want a photo? If so type 'yes'")
     if want_photo == "yes":
         bill += 3
@@ -51,7 +55,7 @@ if bmi < 18.5:
 elif bmi < 25:
     print("normal weight")
 else:
-    print("overweight")'''
+    print("overweight")
 
 # Coding Challenge - Python Pizza
 print("Welcome to Python Pizza Deliveries!")
@@ -82,3 +86,50 @@ if extra_cheese == "Y":
     bill += 1
 
 print(f"\n🛒 Your order summary:\n- Pizza size: {size}\n- Pepperoni: {pepperoni}\n- Extra cheese: {extra_cheese}\n💵 Total: ${bill}")
+
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L: ")
+pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+
+bill = 0
+
+if size == "S":
+    bill = 15
+elif size == "M":
+    bill = 20
+elif size == "L":
+    bill = 25
+else:
+    print("❌Select a valid pizza size, please")
+    exit()
+
+if pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+
+if extra_cheese == "Y":
+    bill += 1
+
+print(f"\n🛒 Your order summary:\n- Pizza size: {size}\n- Pepperoni: {pepperoni}\n- Extra cheese: {extra_cheese}\n💵 Total: ${bill}")
+
+# Final Coding Challenge 'The Treasure Island'
+print("Welcome to Treasure Island.\nYour mission is to find the treasure.")
+user_choice1 = input("You're on dangerous island. Where do you want to go? left or right?\n")
+
+if user_choice1 == "left" or user_choice1 == "Left":
+    user_choice2 = input("You've landed to the shore. Would you like to do? swim to the other "
+                         "island or wait for a boat?\n")
+    if user_choice2 == "wait for a boat" or user_choice2 == "Wait for a boat":
+        user_choice3 = input("You've arrived to a place where there are three doors, which door "
+                             "do you want to walk into? Yellow, Red, or Blue?")
+        if user_choice3 == "Yellow" or user_choice3 == "yellow":
+            print("Congratulations. You've found the treasure!🏆")
+        else:
+            print("You've gotten attacked by tigers. Game over")
+    else:
+        print("You got attacked by crocodiles. Game over")
+else:
+    print("Fall into a hole. Game Over.")

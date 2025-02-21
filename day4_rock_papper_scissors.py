@@ -1,16 +1,16 @@
 import random
 
 # random integers:
-'''random_int = random.randint(1, 10)
-print(random_int)'''
+random_int = random.randint(1, 10)
+print(random_int)
 
 # random floating points
-'''random_number_0_to_1 = random.random()* 10
-print(random_number_0_to_1)'''
+random_number_0_to_1 = random.random()* 10
+print(random_number_0_to_1)
 
 # second option to do random floating points
-'''random_float = random.uniform(1, 10)
-print(random_float)'''
+random_float = random.uniform(1, 10)
+print(random_float)
 
 # Coding challenge
 random_number = random.randint(1, 2)
@@ -20,7 +20,7 @@ if random_number == 1:
 else:
     print("Tails")
 
-'''# Data Types: LISTS
+# Data Types: LISTS
 states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "connecticut"]
 # updating the items in the list:
 states_of_america[1] = "pencilvania"
@@ -47,7 +47,7 @@ fruits = ["strawberries", "nectarines", "apples", "grapes", "peaches", "cherries
 vegetables = ["spinach", "kale", "tomatoes", "celery", "potatoes"]
 # Creating a nested list:
 dirty_dozen = [fruits, vegetables]
-print(dirty_dozen[1][3]) # Output: "celery". First index clarifies which list. Second index clarifies which item.'''
+print(dirty_dozen[1][3]) # Output: "celery". First index clarifies which list. Second index clarifies which item.
 
 # Coding Challenge: Rock, Scissors, Papers
 elements = ["🪨", "📄", "✂️"]

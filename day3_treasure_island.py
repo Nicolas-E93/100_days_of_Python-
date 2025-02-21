@@ -127,6 +127,10 @@ if user_choice1 == "left" or user_choice1 == "Left":
                              "do you want to walk into? Yellow, Red, or Blue?")
         if user_choice3 == "Yellow" or user_choice3 == "yellow":
             print("Congratulations. You've found the treasure!🏆")
+        elif user_choice3 == "Red" or user_choice3 == "red":
+            print("There's fire everywhere. You got burnt. Game over!")
+        elif user_choice3 == "Blue" or user_choice3 == "blue":
+            print("You got attacked by pirates. Game over!")
         else:
             print("You've gotten attacked by tigers. Game over")
     else:

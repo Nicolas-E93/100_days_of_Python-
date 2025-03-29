@@ -11,13 +11,14 @@ shift = int(input("Type the shift number:\n"))
 # TODO-2: Inside the 'encrypt()' function, shift each letter of the 'original_text'
 #         forwards by the shift amount and print the encrypted text.
 
+# TODO-4: What happens if you try to shift a letter forwards by 9? Can you fix the code?
+
 def encrypt(original_text, shift_amount):
     cipher_text = ""
 
     for letter in original_text:
         shifted_position = alphabet.index(letter) + shift_amount
 
-# TODO-4: What happens if you try to shift a letter forwards by 9? Can you fix the code?
         shifted_position %= len(alphabet)
         cipher_text += alphabet[shifted_position]
 

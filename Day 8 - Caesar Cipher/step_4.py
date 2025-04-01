@@ -25,11 +25,10 @@ def caesar(original_text, shift_amount, encode_or_decode):
         shifted_position %= len(alphabet)
         output_text += alphabet[shifted_position]
 
-        if encode_or_decode == "encode":
-            print(f"Here is the encoded result: {output_text}")
-        else:
-            print(f"Here is the decoded result: {output_text}")
+    if encode_or_decode == "encode":
+        print(f"Here is the encoded result: {output_text}")
+    else:
+        print(f"Here is the decoded result: {output_text}")
 
 caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
 
-print('hello')

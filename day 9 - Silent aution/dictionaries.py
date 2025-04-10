@@ -18,8 +18,8 @@ empty_list = []
 empty_dictionary = {}
 
 # Wipe an existing dictionary
-'''programming_terms = {}
-print(programming_terms)'''
+programming_terms = {}
+print(programming_terms)
 
 # Edit an item in a dictionary
 programming_terms["Bug"] = "An error in the system that causes it to work incorrectly"
@@ -29,3 +29,5 @@ print(programming_terms)
 for key in programming_terms:
     print(key)
     print(programming_terms[key])
+
+
